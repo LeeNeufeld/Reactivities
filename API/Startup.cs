@@ -42,12 +42,15 @@ namespace API
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                {
+                    app.UseDeveloperExceptionPage();
+                }
+
+                app.UseRouting();
+
+                app.UseCors("CorsPolicy");
+
             }
-
-            app.UseRouting();
-
-            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

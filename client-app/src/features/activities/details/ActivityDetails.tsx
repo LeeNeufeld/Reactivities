@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Image, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
-import { IpcNetConnectOpts } from "net";
 
 interface IProps {
   activity: IActivity;
